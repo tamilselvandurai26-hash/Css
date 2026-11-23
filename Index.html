@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        header, footer {
+            background: navy;
+            color: white;
+            padding: 15px;
+        }
+
+        nav, section {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        aside, article {
+            background: lightblue;
+            padding: 20px;
+        }
+
+        @media(max-width:600px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h2>My Website</h2></header>
+    <nav><a>Home</a><a>About</a><a>Contact</a></nav>
+    <main>
+        <aside>Sidebar<br>Home<br>About</aside>
+        <section>
+            <article>HTML</article>
+            <article>CSS</article>
+            <article>JS</article>
+        </section>
+    </main>
+    <footer>© 2026 My Website</footer>
+</body>
+</html>                          
